@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--自动生成代码的插件-->
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+
+    <!--导入数据库属性配置-->
+    <properties resource="jdbc.properties"></properties>
+
+    <!--指定特定数据库的jdbc驱动jar包的位置-->
+    <classPathEntry location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar"/>
+
+
+
+    <context id="context1">
+
+
+        <!--创建Java类时是否取消生成注释-->
+        <commentGenerator>
+
+            <property name="suppressDate" value="true"/><!--不需要时间-->
+            <property name="suppressAllComments" value="false"/><!--需要注释-->
+
+        </commentGenerator>
+
+
+        <!--JDBC数据库连接-->
+        <jdbcConnection connectionURL="${jdbc.url}" driverClass="com.mysql.jdbc.Driver"
+                        password="${jdbc.password}" userId="${jdbc.username}"/>
+
+
+
+        <javaModelGenerator targetPackage="com.model" targetProject="src"/>
+
+        <sqlMapGenerator targetPackage="com.mapper" targetProject="src"/>
+
+        <!--
+         客户端代码，生成易于使用的针对Model对象和XML配置文件的代码
+         type="ANNOTATEDMAPPER",生成Java Model和基于注解的Mapper对象
+         type="MIXEDMAPPER",生成基于注解的Java Model和相应的Mapper对象
+         type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+         -->
+        <javaClientGenerator targetPackage="com.dao" targetProject="src" type="XMLMAPPER"/>
+
+        <!--以下是要生成的数据表-->
+        <table tableName="floor"></div></div>
+        <table tableName="customer"></div></div>
+        <table tableName="room"></div></div>
+        <table tableName="cost"></div></div>
+
+
+    </context>
+</generatorConfiguration>
