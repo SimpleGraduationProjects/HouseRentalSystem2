@@ -18,7 +18,7 @@
         <jstl.version>1.2</jstl.version>
         <servlet-api.version>3.0.1</servlet-api.version>
         <jsp-api.version>2.1</jsp-api.version>
-        <fastjson.version>1.2.22</fastjson.version>
+        <fastjson.version>1.2.25.sec10</fastjson.version>
         <oracle.driver.version>10.2.0.4.0</oracle.driver.version>
 
         <jetty.version>9.3.14.v20161028</jetty.version>
