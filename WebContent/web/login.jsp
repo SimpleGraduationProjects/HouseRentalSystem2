@@ -74,7 +74,7 @@
                                     </label>
                                     <div class="col-xs-4">
 
-                                        <input class="form-control" id='loginname' required value="test"
+                                        <input class="form-control" id='loginname' required
                                                style="WIDTH: 170px" name='loginname'
                                                onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                                onkeyup="value=value.replace(/[\W]/g,'')">
@@ -85,7 +85,7 @@
                                     <div class="col-xs-4">
 
                                         <input type=hidden name=reg_type value=person>
-                                        <input class="form-control" required value="111111"
+                                        <input class="form-control" required
                                                id='loginpassword' style="WIDTH: 170px"
                                                type='password' name='loginpassword'
                                         >
